@@ -18,52 +18,42 @@ function dayPlanner() {
         let businessHours = [
             {
                 id: 'eight',
-                hour: m.hour(8),
                 time: '8:00 AM'
             },
             {
                 id: 'nine',
-                hour: m.hour(9),
                 time: '9:00 AM'
             },
             {
                 id: 'ten',
-                hour: m.hour(10),
                 time: '10:00 AM'
             },
             {
                 id: 'eleven',
-                hour: m.hour(11),
                 time: '11:00 AM'
             },
             {
                 id: 'twelve',
-                hour: m.hour(12),
                 time: '12:00 PM'
             },
             {
                 id: 'one',
-                hour: m.hour(13),
                 time: '1:00 PM'
             },
             {
                 id: 'two',
-                hour: m.hour(14),
                 time: '2:00 PM'
             },
             {
                 id: 'three',
-                hour: m.hour(15),
                 time: '3:00 PM'
             },
             {
                 id: 'four',
-                hour: m.hour(16),
                 time: '4:00 PM'
             },
             {
                 id: 'five',
-                hour: m.hour(17),
                 time: '5:00 PM'
             }
         ]
@@ -88,12 +78,12 @@ function dayPlanner() {
                     timeCol.addClass('hour');
                     timeCol.text(businessHours[i].time);
 
-                var inputEvent = $('<input>')
-                    inputEvent.attr('id', businessHours[i].id); 
+                var inputEvent = $('<input>');
+                    inputEvent.attr('id', businessHours[i].id);
                     inputEvent.addClass('time-block');
                     inputEvent.attr('placeholder', 'Enter event details');
 
-                var saveBtn = $('<button>')
+                var saveBtn = $('<button>');
                     saveBtn.attr('id', businessHours[i].id);
                     saveBtn.addClass('btn btn-primary saveBtn');
                     saveBtn.text('Save');
